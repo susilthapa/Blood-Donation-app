@@ -9,12 +9,12 @@
 {% block content %}
     <div>
         <h1>This is Home</h1>
-        {% if user.is_authenticated %}
-            <span>User: {{current_user.user.username }}</span>
-        {% endif %}
+{#        {% if user.is_authenticated %}#}
+{#            <span>User: {{current_user.user.username }}</span>#}
+{#        {% endif %}#}
     </div>
     <div>
-        <form method="POST" class="ml-3 " action="{% url 'search' %}">
+        <form method="POST" class="ml-3 mt-4" action="{% url 'search' %}">
         {% csrf_token %}
 {#        <input name="blood_group"placeholder="Search...">#}
         <select style="border-radius: 5px" name="blood_group">

@@ -9,9 +9,16 @@
                 {{ form|crispy }}
                 <div>
                     <button type="submit">Login</button>
-                    <small>Need an account? <a style="text-decoration: none" href={% url 'register' %}>Sign Up</a> </small>
+                    <small class="text-muted">
+                        <a href={% url 'password_reset' %}>Forgot Password</a>
+                    </small>
                 </div>
             </fieldset>
         </form>
-</div>
+        <div class="border-top pt-3 col-md-8">
+            <small class="text-muted">
+                Need An An Account? <a class="ml-2" href="{% url 'register' %}">Sign Up</a>
+            </small>
+        </div>
+    </div>
 {% endblock content %}

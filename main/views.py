@@ -38,7 +38,7 @@ class SearchView(TemplateView):
         source_lat = current_user.latitude
         source_lon = current_user.longitude
         # print(f'SOURCE_LAT = {source_lat}')
-        context = {'blood_group': blood_group}
+        context = {}
 
         for dest_user in destination_user:
             print(dest_user)
@@ -61,7 +61,8 @@ class SearchView(TemplateView):
                 context = {
                     'donors': donors,
                     'distance': distance,
-                    'title': title
+                    'title': title,
+                    'blood_group': blood_group
                 }
         if donors:
             messages.success(request, f'Found Donor of Blood Group {blood_group} within {radius}km range:')

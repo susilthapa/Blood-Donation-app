@@ -1,12 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="db" uuid="c1bfa5e5-496e-49f6-90ef-1dab20e74c28">
-      <driver-ref>sqlite.xerial</driver-ref>
-      <synchronize>true</synchronize>
-      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:F:\Python\blood_donation\db.sqlite3</jdbc-url>
-    </data-source>
     <data-source source="LOCAL" name="db [2]" uuid="8cf246c6-a5f3-49bf-89f1-e21cd7b24d40">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
