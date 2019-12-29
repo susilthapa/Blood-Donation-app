@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="233a7434-7e62-4a03-ad80-e9a4251b3bd3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/password_reset.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/password_reset.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -310,7 +311,7 @@
       <workItem from="1577341532427" duration="9422000" />
       <workItem from="1577425376264" duration="2553000" />
       <workItem from="1577545669935" duration="129000" />
-      <workItem from="1577599192318" duration="745000" />
+      <workItem from="1577599192318" duration="1034000" />
     </task>
     <servers />
   </component>
