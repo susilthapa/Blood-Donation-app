@@ -1,0 +1,70 @@
+{% extends "./base.html" %}
+{% load crispy_forms_tags %}
+{#{% block navbar %}#}
+{##}
+{#{% endblock %}#}
+{% block title %} Home {% endblock %}
+
+
+{% block content %}
+    <div>
+        <h1>This is Home</h1>
+        {% if user.is_authenticated %}
+            <span>User: {{current_user.user.username }}</span>
+        {% endif %}
+    </div>
+    <div>
+        <form method="POST" class="ml-3 " action="{% url 'search' %}">
+        {% csrf_token %}
+{#        <input name="blood_group"placeholder="Search...">#}
+        <select style="border-radius: 5px" name="blood_group">
+            <option value="" selected disabled hidden>Choose Blood Group</option>
+            <option value="A+" {% if blood_group == "A+" %} selected="selected"{% endif %}>A+</option>
+            <option value="A-" {% if blood_group == "A-" %} selected="selected"{% endif %}>A-</option>
+            <option value="B+" {% if blood_group == "B+" %} selected="selected"{% endif %}>B+</option>
+            <option value="B-" {% if blood_group == "B-" %} selected="selected"{% endif %}>B-</option>
+            <option value="O+" {% if blood_group == "O+" %} selected="selected"{% endif %}>O+</option>
+            <option value="O-" {% if blood_group == "O-" %} selected="selected"{% endif %}>O-</option>
+            <option value="AB+" {% if blood_group == "AB+" %} selected="selected"{% endif %}>AB+</option>
+            <option value="AB-" {% if blood_group == "AB-" %} selected="selected"{% endif %}>AB-</option>
+        </select>
+        {% if user.is_authenticated %}
+            <div class="mt-2" style="display: flex; margin-left: 6%">
+                <select name="radius">
+                    <option value="5">5km</option>
+                    <option value="10">10km</option>
+                </select>
+                <button type="submit" class="btn btn-sm btn-success ">Search</button>
+            </div>
+{#            <div>#}
+{#                <button type="submit" class="btn btn-sm btn-primary ">Extend Radius</button>#}
+{#            </div>#}
+        {% else %}
+            <div class="mt-2">
+                <button type="submit" style="margin-left: 9%" class="btn btn-sm btn-success " disabled>Search</button>
+                <span style="padding: 3px; color: red; background-color: darkslategrey; border-radius: 5px">You must be logged in to search blood group.</span>
+            </div>
+        {% endif %}
+    </form>
+    </div><br>
+
+    {% if donors %}
+        <h3 class="mb-4">{{title}}<hr></h3>
+        {% for donor in donors %}
+            <div class="ml-3 mb-4">
+                <div>Username: {{ donor.user.username }}</div>
+                <div>Blood Group: {{ donor.blood_group }}</div>
+                <div>Distance: {{ distance }}km</div>
+                <div>Age: {{ donor.age }}</div>
+                <div>Phone Number: {{ donor.phone_number }}</div>
+            </div>
+{#            <form method="post" action={% url 'search' %}>#}
+{#                <button name="extended" #}
+{#            </form>#}
+        {% endfor %}
+    {% endif %}
+
+{% endblock content %}
+
+{% block script %}
+{% endblock %}

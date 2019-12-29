@@ -1,0 +1,35 @@
+
+.container{
+    display: flex;
+
+}
+navbar{
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: #5b80b2;
+    /*width: 513%;*/
+    /*color: white;*/
+}
+.ul-left, .ul-right{
+    list-style-type: none;
+    display: flex;
+}
+.right{
+    margin-left: 75%;
+}
+li{
+    padding: 5px;
+
+}
+
+a{
+    text-decoration: none;
+    color: blue;
+}
+
+.nav-right{
+    margin-left: 500%;
+}
+#extend{
+    width: 3%;
+}
