@@ -5,19 +5,19 @@ from ip2geotools.errors import LocationError, PermissionRequiredError
 import geocoder
 import IP2Location
 
-my_ip_address = requests.get('https://api.ipify.org').text
-IP2LocObj = IP2Location.IP2Location()
-'''
-    Cache the database into memory to accelerate lookup speed.
-    WARNING: Please make sure your system have sufficient RAM to use this feature.
-'''
-# database = IP2Location.IP2Location(os.path.join("data", "IPV6-COUNTRY.BIN"), "SHARED_MEMORY")
-IP2LocObj.open("data/IP-COUNTRY-REGION-CITY-LATITUDE-LONGITUDE-ZIPCODE-TIMEZONE-ISP-DOMAIN-NETSPEED-AREACODE-WEATHER-MOBILE-ELEVATION-USAGETYPE-SAMPLE.BIN")
-rec = IP2LocObj.get_all()
-
-print(rec.country_short)
-print(rec.latitude)
-print(rec.longitude)
+# my_ip_address = requests.get('https://api.ipify.org').text
+# IP2LocObj = IP2Location.IP2Location()
+# '''
+#     Cache the database into memory to accelerate lookup speed.
+#     WARNING: Please make sure your system have sufficient RAM to use this feature.
+# '''
+# # database = IP2Location.IP2Location(os.path.join("data", "IPV6-COUNTRY.BIN"), "SHARED_MEMORY")
+# IP2LocObj.open("data/IP-COUNTRY-REGION-CITY-LATITUDE-LONGITUDE-ZIPCODE-TIMEZONE-ISP-DOMAIN-NETSPEED-AREACODE-WEATHER-MOBILE-ELEVATION-USAGETYPE-SAMPLE.BIN")
+# rec = IP2LocObj.get_all()
+#
+# print(rec.country_short)
+# print(rec.latitude)
+# print(rec.longitude)
 
 
 
