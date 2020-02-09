@@ -8,7 +8,6 @@ from haversine import haversine, Unit
 
 
 def home(request):
-    # print(f'USER = {current_user}')
     return render(request, './home.html')
 
 
