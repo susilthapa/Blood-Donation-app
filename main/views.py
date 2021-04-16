@@ -48,7 +48,12 @@ class SearchView(TemplateView):
             lon2 = dest_user.longitude
             source = (source_lat, source_lon)
             destination = (lat2, lon2)
-            distance = haversine(source, destination)
+            try:
+                distance = haversine(source, destination)
+            except:
+                print("ERORORORO")
+                messages.error(request, "Please Enter your lat & lan values in profile")
+                return render(request, './home.html', context={})
             # print(f'RESULT = {distance}')
             if distance <= radius:
                 # if dest_user not in donors_in_5km:
@@ -63,7 +68,6 @@ class SearchView(TemplateView):
                     'title': title,
                     'blood_group': blood_group
                 }
-
 
         print(f'Array of CONTEXT = {context}')        
         if donors:
