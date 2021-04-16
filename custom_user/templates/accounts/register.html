@@ -1,0 +1,11 @@
+<h1>Register</h1>
+{% if messages %}
+	{% for message in messages %}
+		{{message}}
+	{% endfor %}
+{% endif %}		
+<form method="post">
+	{% csrf_token %}
+	{{form.as_p}}
+	<button type="sumbit">Signup</button>
+</form>

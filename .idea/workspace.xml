@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="233a7434-7e62-4a03-ad80-e9a4251b3bd3" name="Default Changelist" comment="" />
+    <list default="true" id="233a7434-7e62-4a03-ad80-e9a4251b3bd3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -76,7 +78,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ecommerce" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -332,7 +334,8 @@
       <workItem from="1581074420254" duration="627000" />
       <workItem from="1581141836880" duration="689000" />
       <workItem from="1581233463303" duration="2363000" />
-      <workItem from="1581249819385" duration="2876000" />
+      <workItem from="1581249819385" duration="2995000" />
+      <workItem from="1581258344479" duration="118000" />
     </task>
     <servers />
   </component>
@@ -356,10 +359,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="413" y="130" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.768@0.0.1366.768" timestamp="1576482133158" />
-    <state x="463" y="138" key="FileChooserDialogImpl" timestamp="1580964588745">
+    <state x="463" y="138" key="FileChooserDialogImpl" timestamp="1581258466385">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="463" y="138" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1580964588745" />
+    <state x="463" y="138" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1581258466385" />
     <state width="1323" height="198" key="GridCell.Tab.0.bottom" timestamp="1581245386916">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -408,10 +411,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="92" y="92" width="1182" height="584" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1366.768@0.0.1366.768" timestamp="1577169326159" />
-    <state x="379" y="207" key="com.intellij.ide.util.TipDialog" timestamp="1577675154483">
+    <state x="379" y="207" key="com.intellij.ide.util.TipDialog" timestamp="1581258342377">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="379" y="207" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1577675154483" />
+    <state x="379" y="207" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1581258342377" />
     <state x="314" y="86" width="737" height="596" key="find.popup" timestamp="1577609917074">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
